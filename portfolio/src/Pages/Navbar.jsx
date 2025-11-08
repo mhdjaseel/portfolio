@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-scroll";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,16 +10,43 @@ function Navbar() {
 
         <div className="hidden sm:flex gap-3 md:pr-5 lg:gap-8">
           <ul className="font-Mulish flex gap-3 cursor-pointer ">
-            <li className="hover:text-teal-400 ">Skills</li>
-            <li className="hover:text-teal-400 ">Projects</li>
-            <li className="hover:text-teal-400 ">Contact Me</li>
+            <Link
+              to="home"
+              smooth={true}
+              duration={600}
+              className="cursor-pointer hover:text-teal-400"
+            >
+              Home
+            </Link>
+
+            <Link
+              to="skills"
+              smooth={true}
+              duration={600}
+              className="cursor-pointer hover:text-teal-400"
+            >
+              Skills
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={600}
+              className="cursor-pointer hover:text-teal-400"
+            >
+              Projects
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={600}
+              className="cursor-pointer hover:text-teal-400"
+            >
+              Contact Me
+            </Link>
           </ul>
         </div>
 
-        <button
-          className="sm:hidden"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <button className="sm:hidden" onClick={() => setIsOpen(!isOpen)}>
           <i
             className={`fa-solid ${
               isOpen ? "fa-xmark" : "fa-bars"
@@ -33,9 +60,39 @@ function Navbar() {
         }`}
       >
         <ul className="flex flex-col gap-6 pt-3 p-6 mt-10 text-lg font-medium">
-          <li className="hover:text-teal-400 cursor-pointer">Skills</li>
-          <li className="hover:text-teal-400 cursor-pointer">Projects</li>
-          <li className="hover:text-teal-400 cursor-pointer">Contact Me</li>
+          <Link
+            to="home"
+            smooth={true}
+            duration={600}
+            className="cursor-pointer hover:text-teal-400"
+          >
+            Home
+          </Link>
+
+          <Link
+            to="skills"
+            smooth={true}
+            duration={600}
+            className="cursor-pointer hover:text-teal-400"
+          >
+            Skills
+          </Link>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={600}
+            className="cursor-pointer hover:text-teal-400"
+          >
+            Projects
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={600}
+            className="cursor-pointer hover:text-teal-400"
+          >
+            Contact Me
+          </Link>
         </ul>
       </div>
     </>

@@ -3,7 +3,7 @@ import pic from '../assets/pic1.jpg';
 
 function About() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-16 mt-4 grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
+    <section id='home' className="max-w-5xl mx-auto px-6 py-16 mt-4 grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
       
 
       <div className="flex flex-col justify-center items-center">
