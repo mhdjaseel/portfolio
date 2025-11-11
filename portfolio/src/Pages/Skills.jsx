@@ -1,8 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion"
 
 function Skills() {
   return (
-    <div id="skills" className="mt-5">
+    <motion.div id="skills" className="mt-5" initial={{scale:0,opacity:0}}  whileInView={{scale:1,opacity:1}} transition={{duration:1}}  >
       <h1 className="text-center font-Montserrat text-2xl font-bold text-blue-950">
         Skills
       </h1>
@@ -58,7 +59,7 @@ function Skills() {
           <h1>DOCKER</h1>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
