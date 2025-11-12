@@ -2,12 +2,10 @@ import React from "react";
 import pic from "../assets/pic2.jpg"
 import resume from '../assets/muhammed_jaseel.pdf'
 import { Link } from "react-scroll";
-import { motion } from "framer-motion"
 
 function About() {
   return (
-    <motion.section
- initial={{scale:0,opacity:0}}  whileInView={{scale:1,opacity:1}} transition={{duration:2}}
+    <section
       id="home"
       className="max-w-5xl mx-auto px-6 py-16 mt-4 grid grid-cols-1 sm:grid-cols-2 gap-10 items-center"
     >
@@ -73,7 +71,7 @@ function About() {
           </Link>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 

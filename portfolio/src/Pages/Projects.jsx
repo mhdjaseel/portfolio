@@ -2,11 +2,10 @@ import React from "react";
 import pic from "../assets/p1.png";
 import pic2 from "../assets/p2.png";
 import pic3 from "../assets/p3.png";
-import { motion } from "framer-motion"
 
 function Projects() {
   return (
-    <motion.div  initial={{scale:0,opacity:0}}  whileInView={{scale:1,opacity:1}} transition={{duration:2}} id="projects" className="mt-5" >
+    <div  id="projects" className="mt-5" >
       <h1 className="text-center font-Montserrat text-2xl font-bold text-blue-950 mt-4 ">
         Projects
       </h1>
@@ -73,7 +72,7 @@ function Projects() {
           </a>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

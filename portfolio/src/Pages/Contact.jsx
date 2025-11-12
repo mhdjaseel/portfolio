@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2"
-import { motion } from "framer-motion"
 
 function Contact() {
       const [result, setResult] = useState("");
@@ -35,7 +34,7 @@ else{
    }
   };
   return (
-    <motion.div  initial={{scale:0,opacity:0}}  whileInView={{scale:1,opacity:1}} transition={{duration:2}} id="contact" className="py-10 px-4 sm:px-8 lg:px-20 bg-gray-50">
+    <div  id="contact" className="py-10 px-4 sm:px-8 lg:px-20 bg-gray-50">
   <h1 className="text-center font-Montserrat text-3xl sm:text-4xl font-bold text-blue-950 mb-6">
     Contact Me
   </h1>
@@ -111,7 +110,7 @@ else{
       </div>
     </form>
   </div>
-</motion.div>
+</div>
 
   );
 }

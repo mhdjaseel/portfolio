@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <>
-      <motion.div  initial={{scale:0,opacity:0}}  whileInView={{scale:1,opacity:1}} transition={{duration:2}} className="fixed top-0 left-0 right-0 flex justify-between p-4 bg-blue-950 text-white xl:justify-around ">
+      <div  className="fixed top-0 left-0 right-0 flex justify-between p-4 bg-blue-950 text-white xl:justify-around ">
         <h1 className="font-semibold font-Montserrat">Muhammed Jaseel CA</h1>
 
         <div  className="hidden sm:flex gap-3 md:pr-5 lg:gap-8">
@@ -54,7 +54,7 @@ function Navbar() {
             } text-2xl transition-transform duration-300 cursor-pointer`}
           ></i>
         </button>
-      </motion.div>
+      </div>
       <div
         className={`fixed top-12 right-0 h-full w-2/4 sm:w-1/3 bg-blue-950 text-white transform transition-transform duration-600 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
